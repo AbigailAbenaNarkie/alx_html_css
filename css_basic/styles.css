@@ -9,6 +9,18 @@ ul {
 
 li a {
   font-weight: bold;
+  text-decoration: none;
+  color: #007acc;
+}
+
+li a:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: gold;
 }
 
 /* Table styling */
@@ -22,6 +34,10 @@ th, td {
   border: 1px solid #ccc;
   padding: 0.5rem;
   text-align: left;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
 }
 
 /* Flexbox layout positioning */
@@ -54,9 +70,21 @@ aside {
   color: gray;
 }
 
-/* Optional: Header and footer styling */
+/* Header and footer styling */
 header, footer {
   background-color: #f8f8f8;
   padding: 1rem;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive nav layout */
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
