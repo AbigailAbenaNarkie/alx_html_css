@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="2-styles.css">
+    <link rel="stylesheet" href="holberton_school-icon/style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HERO / HEADER
+    ========================== -->
+    <header class="hero">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Headphones Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#what-we-do">What we do</a></li>
+                <li><a href="#results">Our results</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+            <a href="#contact" class="cta-btn">CALL TO ACTION</a>
+        </div>
+    </header>
+
+    <!-- =========================
+         WHAT WE DO SECTION
+    ========================== -->
+    <section id="what-we-do" class="what-we-do">
+        <h2>What we do…</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+            nunc vel tincidunt lacinia, nunc nisl aliquam nunc, eget aliquam
+            nunc nisl eu nunc. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas.
+        </p>
+
+        <div class="services">
+            <div class="service">
+                <i class="holberton_school-icon-ic_sound"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla convallis egestas rhoncus.
+                </p>
+            </div>
+            <div class="service">
+                <i class="holberton_school-icon-ic_video"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla convallis egestas rhoncus.
+                </p>
+            </div>
+            <div class="service">
+                <i class="holberton_school-icon-ic_music"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla convallis egestas rhoncus.
+                </p>
+            </div>
+            <div class="service">
+                <i class="holberton_school-icon-ic_hearing"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla convallis egestas rhoncus.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         OUR RESULTS SECTION
+    ========================== -->
+    <section id="results" class="results">
+        <h2>Our results speak for themselves</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+            nunc vel tincidunt lacinia, nunc nisl aliquam nunc, eget aliquam
+            nunc nisl eu nunc. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas.
+        </p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="percentage">+2%</div>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="stat">
+                <div class="percentage">+50%</div>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="stat">
+                <div class="percentage">+100%</div>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="stat">
+                <div class="percentage">+200%</div>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
+
+
