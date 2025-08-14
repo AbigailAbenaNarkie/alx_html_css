@@ -35,11 +35,12 @@ body {
    ========================= */
 .nav-container {
     max-width: var(--max-width);
-    margin: left auto;
+    margin: auto;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 50px;
 }
 
 .logo img {
@@ -48,9 +49,9 @@ body {
 
 .nav-links {
     list-style: none;
-    margin: right auto;
     display: flex;
     gap: 30px;
+    margin-left: 50px;
 }
 
 .nav-links a {
@@ -71,6 +72,7 @@ body {
     border: none;
     font-size: 28px;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 /* =========================
