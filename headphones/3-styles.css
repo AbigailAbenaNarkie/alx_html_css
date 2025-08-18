@@ -233,66 +233,100 @@ body {
     margin: 0;
 }
 
+/* =========================
+   CONTACT US SECTION
+========================== */
+.contact-us {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    max-width: 730px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px; /* ensures the form is centered and not too wide */
+    margin: 0 auto;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(255, 101, 101, 0.5);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.submit-btn:hover,
+.submit-btn:active {
+    opacity: 0.9;
+}
+
 
 /* =========================
    RESPONSIVE (MOBILE ≤480px)
-   ========================= */
+========================== */
 @media screen and (max-width: 480px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.85);
-        padding: 20px;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-container {
-        flex-direction: column;
-    }
-
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .what-we-do {
+    .contact-us {
         padding: 60px 20px;
     }
 
-    .what-we-do h2 {
+    .contact-us h2 {
         font-size: 24px;
     }
 
-    .what-we-do p {
-        margin-bottom: 40px;
+    .contact-us p {
         font-size: 14px;
-    }
-
-    .results {
-        padding: 60px 20px;
-    }
-
-    .results h2 {
-        font-size: 24px;
-    }
-
-    .results p {
         margin-bottom: 40px;
-        font-size: 14px;
-    }
-
-    .percentage {
-        width: 150px;
-        height: 150px;
-        line-height: 150px;
-        font-size: 32px;
     }
 }
+
+
+
 
