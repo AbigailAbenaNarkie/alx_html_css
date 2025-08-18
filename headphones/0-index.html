@@ -10,7 +10,7 @@
     <header class="hero">
         <nav class="nav-container">
             <div class="logo">
-                <img src="Assets/logo_headphones.png" alt="Logo Headphones">
+                <img src="Assets/logo_headphones.png" alt="Headphone Logo">
             </div>
 
             <ul class="nav-links">
@@ -22,17 +22,29 @@
             <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
         </nav>
 
-        <div class="hero-content">
-            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-            <a href="#" class="cta-btn">Call to Action</a>
-
-            <!-- Extra paragraphs -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+        <section class="hero">
+  <div class="hero-content">
+    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#" class="cta-btn">Call to Action</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</section>  
     </header>
+    
+     <script>
+    // Toggle mobile menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
 

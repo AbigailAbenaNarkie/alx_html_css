@@ -22,7 +22,7 @@ body {
    HERO SECTION
    ========================= */
 .hero {
-    background: url("images/hero-background.jpg") no-repeat center center/cover;
+    background: url("Assets/headphones_hero_1.jpg") no-repeat center center/cover;
     color: var(--text-color);
     min-height: 100vh;
     display: flex;
@@ -164,7 +164,7 @@ body {
    OUR RESULTS SECTION
    ========================= */
 .results {
-    background: url("images/results-background.jpg") no-repeat center center/cover;
+    background: url("Assets/headphones_hero_2.jpg") no-repeat center center/cover;
     color: var(--text-color);
     text-align: center;
     padding: 110px 20px;
@@ -190,28 +190,49 @@ body {
     justify-content: center;
 }
 
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
 .stat {
-    flex: 1 1 200px;
-    max-width: 200px;
+    width: 200px; /* match pentagon size */
+    text-align: center;
 }
 
-.percentage {
-    display: inline-block;
-    background: var(--primary-color);
-    border-radius: 50%;
-    width: 190px;
-    height: 190px;
-    line-height: 190px;
-    font-size: 46px;
-    font-weight: 700;
-    color: var(--text-color);
-    margin-bottom: 15px;
+.pentagon-container {
+    position: relative;
+    width: 100%;
 }
 
-.stat p {
+.pentagon-container img {
+    width: 100%;
+    display: block;
+}
+
+.pentagon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* text color inside pentagon */
+}
+
+.pentagon-text .percentage {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pentagon-text p {
     font-size: 14px;
-    line-height: 24px;
+    margin: 0;
 }
+
 
 /* =========================
    RESPONSIVE (MOBILE ≤480px)

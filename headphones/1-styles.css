@@ -22,7 +22,7 @@ body {
    HERO SECTION
    ========================= */
 .hero {
-    background: url("images/hero-background.jpg") no-repeat center center/cover;
+    background: url("Assets/headphones_hero_1.jpg") no-repeat center center/cover;
     color: var(--text-color);
     min-height: 100vh;
     display: flex;
@@ -35,15 +35,15 @@ body {
    ========================= */
 .nav-container {
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .logo img {
-    height: 40px;
+    height: 20px;
 }
 
 .nav-links {
@@ -70,6 +70,7 @@ body {
     border: none;
     font-size: 28px;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 /* =========================
@@ -100,63 +101,13 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: opacity 0.3s;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
 .cta-btn:hover,
 .cta-btn:active {
     opacity: 0.9;
-}
-
-/* =========================
-   WHAT WE DO SECTION
-   ========================= */
-.what-we-do {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.what-we-do .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.what-we-do h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.section-description {
-    font-size: 1rem;
-    margin-bottom: 40px;
-    color: #555;
-}
-
-.icon-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
-
-.icon-item {
-    text-align: center;
-    padding: 20px;
-}
-
-.icon-item span {
-    font-size: 48px;
-    color: var(--primary-color);
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-.icon-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.icon-item p {
-    font-size: 0.95rem;
-    color: #666;
 }
 
 /* =========================
@@ -185,11 +136,6 @@ body {
 
     .hero-content h1 {
         font-size: 1.5rem;
-    }
-
-    .icon-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
     }
 }
 
